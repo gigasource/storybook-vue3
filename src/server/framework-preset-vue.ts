@@ -1,4 +1,4 @@
-import { VueLoaderPlugin } from 'vue-loader-v16'
+import { VueLoaderPlugin } from 'vue-loader'
 import { Configuration } from 'webpack';
 
 export function webpack(config: Configuration) {
@@ -11,20 +11,8 @@ export function webpack(config: Configuration) {
         ...((config.module || { rules: [] }).rules || []),
         {
           test: /\.vue$/,
-          loader: require.resolve('vue-loader-v16'),
+          loader: require.resolve('vue-loader'),
           options: {},
-        },
-        {
-          test: /\.tsx?$/,
-          use: [
-            {
-              loader: require.resolve('ts-loader'),
-              options: {
-                transpileOnly: true,
-                appendTsSuffixTo: [/\.vue$/],
-              },
-            },
-          ],
         },
       ],
     },
