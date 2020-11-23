@@ -21,6 +21,9 @@
     "storybook-server": "./bin/index.js"
   },
   "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prepare": "tsc"
   },
   "devDependencies": {
     "@storybook/core": "^6.1.0-alpha.9",
@@ -29,6 +32,7 @@
     "ts-loader": "^8.0.3",
     "typescript": "^4.0.2",
     "vue": "^3.0.0-0",
+    "vue-loader": "16.0.0-rc.2",
     "webpack": "^4.44.1"
   },
   "peerDependencies": {
