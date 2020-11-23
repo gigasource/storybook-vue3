@@ -16,7 +16,8 @@ const root = createApp({
     }
   }
 });
-global.app = root;
+// @ts-ignore
+window.root = root;
 export default function render({
   storyFn,
   kind,
