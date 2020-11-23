@@ -6,12 +6,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andoshin11/storybook-vue3.git"
+    "url": "git+https://github.com/gigasource/storybook-vue3.git"
   },
   "bugs": {
-    "url": "https://github.com/andoshin11/storybook-vue3/issues"
+    "url": "https://github.com/gigasource/storybook-vue3/issues"
   },
-  "homepage": "https://github.com/andoshin11/storybook-vue3#readme",
+  "homepage": "https://github.com/gigasource/storybook-vue3#readme",
   "publishConfig": {
     "access": "public"
   },
@@ -21,9 +21,6 @@
     "storybook-server": "./bin/index.js"
   },
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w",
-    "prepare": "tsc"
   },
   "devDependencies": {
     "@storybook/core": "^6.1.0-alpha.9",
